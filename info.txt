@@ -1,0 +1,13 @@
+docker exec -it messanger_app-db-1 psql -U postgres -d postgres
+
+SELECT * FROM users; - check all users
+
+DELETE FROM users; - delete all users
+
+DELETE FROM users WHERE email = '1@';
+-- or
+DELETE FROM users WHERE username = '1';
+
+COMMIT; - save changes
+
+\q - quit
